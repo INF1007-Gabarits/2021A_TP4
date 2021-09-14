@@ -1,8 +1,9 @@
 # TP4
 ### Test & outils de corrections
-:warning: **Attention ce TP ne du qu'une semaine, la remise est le dimanche suivant votre séance de lab** :warning:  
+:warning: **Attention ce TP ne du qu'une semaine, la remise est le lundi suivant votre séance de lab** :warning:  
 :alarm_clock: Remise le [8 novembre à 23h59](https://www.timeanddate.com/countdown/generic?iso=2020118T235959&p0=165&msg=Remise+TP4&font=cursive)
 ## Objectifs
+Le TP4 se concentre sur l'utilisation de librairies scientifiques et graphiques. Plus précisément, une familiarisation avec numpy et pandas, des librairies essentielles en python suivi de la visualisation de certaines données avec matplotlib et seaborn. De plus, vous aurez à réaliser l'écriture de tests, un élément essentiel lors de la réalisation de projet en programmation.  
 Ce 4e travail pratique vise à vous familiariser avec de nouvelles pratiques de bonne gestion du code. L'écriture de tests et la documentation sont très importants lorsqu'on souhaite mener un projet à terme et permettre une maintenance efficace et peu coûteuse.
 ## Consignes à respecter
 - Respecter [guide de codage](https://github.com/INF1007-Gabarits/Guide-codage-python) et les normes pep8
