@@ -4,7 +4,7 @@
 - [Objectifs](#objectifs)
 - [Partie 1: Exploration de la base de données](#partie-1-Lire-et-construire-la-base-de-donn%C3%A9es)
 - [Partie 2: Affichage graphique des données](#partie-2-analyse-des-donn%C3%A9es)
-- [Partie 3: Rédaction des tests](#partie-3-Rédaction-des-tests)
+- [Partie 3: Rédaction des tests](#partie-3-R%C3%A9daction-des-tests)
 
 :alarm_clock: [Date de remise le dimanche 10 novembre à 23h59](https://www.timeanddate.com/countdown/generic?iso=20210406T2359&p0=165&font=cursive)
 
