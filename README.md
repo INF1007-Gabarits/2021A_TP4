@@ -2,7 +2,7 @@
 
 - [Directives particulières](#directives-particuli%C3%A8res)
 - [Objectifs](#objectifs)
-- [Partie 1: Exploration et construction de la base de données](#partie-1-Lire-et-construire-la-base-de-donn%C3%A9es)
+- [Partie 1: Exploration de la base de données](#partie-1-Lire-et-construire-la-base-de-donn%C3%A9es)
 - [Partie 2: Affichage graphique des données](#partie-2-analyse-des-donn%C3%A9es)
 - [Partie 3: Rédaction des tests](#partie-3-R%C3%A9daction-des-tests)
 
