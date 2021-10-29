@@ -11,9 +11,8 @@
 ## Directives particulières
 * Un fichier TP4.ipynb sera utilisé;
 * Il suffit de faire un 'pip install jupyter' puis de rajouter jupyter sur pycharm afin de l'ouvrir, les jupyter notebook sont intéressants pour leur affichage rapide et vous familiariserons avec on outil utilisé communément;
-* N'oubliez pas également d'installer les librairies manquantes (seaborn et pandas) via anaconda ou directement via pycharm
-* Noms de variables et fonctions adéquats (concis, compréhensibles);  
-* Pas de librairies externes autres que celles déjà importées;  
+* N'oubliez pas également d'installer les librairies manquantes (seaborn et pandas) via anaconda ou directement via pycharm; 
+* Pas de librairies externes autres que celles déjà importées.
 
 ## Objectifs
 Le TP4 se concentre sur l'utilisation de librairies scientifiques et graphiques. Plus précisément, une familiarisation avec numpy et pandas, des librairies essentielles en python suivi de la visualisation de certaines données avec matplotlib et seaborn. Exceptionnellement, les étapes à suivre pour les parties 1 et 2 seront expliquées entièrement dans le jupyter notebook. Pour ce qui est de la partie 3 sur la rédaction de tests, un élément important lors de la réalisation de projet en programmation, les instructions sont ci-dessous.
