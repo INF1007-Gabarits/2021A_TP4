@@ -15,7 +15,7 @@
 * Pas de librairies externes autres que celles déjà importées.
 
 ## Objectifs
-Le TP4 se concentre sur l'utilisation de librairies scientifiques et graphiques. Plus précisément, une familiarisation avec numpy et pandas, des librairies essentielles en python suivi de la visualisation de certaines données avec matplotlib et seaborn. Exceptionnellement, les étapes à suivre pour les parties 1 et 2 seront expliquées entièrement dans le jupyter notebook nommé TP4.ipynb. Pour ce qui est de la partie 3 sur la rédaction de tests, un élément important lors de la réalisation de projet en programmation, les instructions sont ci-dessous.
+Le TP4 se concentre sur l'utilisation de librairies scientifiques et graphiques. Plus précisément, vous aurez à vous familiariser avec numpy et pandas, des librairies essentielles en python en plus de visualiser certaines données avec matplotlib et seaborn. Exceptionnellement, les étapes à suivre pour les parties 1 et 2 seront expliquées entièrement dans le jupyter notebook nommé TP4.ipynb. Pour ce qui est de la partie 3 sur la rédaction de tests, un élément important lors de la réalisation de projet en programmation, les instructions sont ci-dessous.
 
 ## Partie 3: Rédactions des tests
 Comme vu en classe, il est très important de tester extensivement le code écrit. C'est malheureusement une pratique souvent ignorée par manque de temps ou d'intérêt. Mais comme pour toute autre bonne pratique en génie informatique/logiciel, les conséquences négatives d'une telle décision finissent par nous rattraper tous.
