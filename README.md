@@ -11,7 +11,7 @@
 ## Directives particulières
 * Un fichier TP4.ipynb sera utilisé;
 * Il suffit de faire un 'pip install jupyter' puis de rajouter jupyter sur pycharm afin de l'ouvrir, les jupyter notebook sont intéressants pour leur affichage rapide et vous familiariserons avec un outil communément utilisé;
-* N'oubliez pas également d'installer les librairies manquantes (seaborn et pandas) via anaconda ou directement via pycharm; 
+* N'oubliez pas également d'installer les librairies manquantes (seaborn, numpy et pandas) via anaconda ou directement via pycharm; 
 * Pas de librairies externes autres que celles déjà importées.
 
 ## Objectifs
