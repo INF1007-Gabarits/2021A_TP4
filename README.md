@@ -6,7 +6,7 @@
 - [Partie 2: Affichage graphique des données](#partie-2-analyse-des-donn%C3%A9es)
 - [Partie 3: Rédaction des tests](#partie-3-rédactions-des-tests)
 
-:alarm_clock: [Date de remise le dimanche 10 novembre à 23h59](https://www.timeanddate.com/countdown/generic?iso=20210406T2359&p0=165&font=cursive)
+:alarm_clock: [Date de remise le dimanche 14 novembre à 23h59](https://www.timeanddate.com/countdown/generic?iso=20210406T2359&p0=165&font=cursive)
 
 ## Directives particulières
 * Un fichier TP4.ipynb sera utilisé;
