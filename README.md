@@ -20,55 +20,46 @@ Le TP4 se concentre sur l'utilisation de librairies scientifiques et graphiques.
 ## Partie 3: Rédactions des tests
 Il est primordial de tester extensivement le code écrit. Toutefois, cette pratique est souvent mise de côté par manque de temps ou d'envie. Elle demeure néanmoins une bonne habitude à entreprendre pour vos futurs projets en tant qu'ingénieur en informatique/logiciel.
 
-Pour votre première rédaction de tests, vous allez vous inspirer de codes déjà rédigés auparavant lors du TP1. Les codes en question sont les suivants. 
+Pour votre première rédaction de tests, vous allez vous inspirer de codes déjà rédigés auparavant lors du TP1. Les codes en question sont les suivants. Ils sont aussi disponibles dans le fichier *fonctions_a_tester.py*.
 
 ```python
 # Fonction fizzBuzz 
-def fizzBuzz(n):
-    # TODO imprimer la chaine de caractère appropriée avec la fonction print().
-    #  Assigner ensuite la valeur à la variable resultat
-    toPrint = ""
-    if n%3==0:
-        toPrint += "fizz"
-    if n%5==0:
-        toPrint += "buzz"
-    if toPrint == "":
-        toPrint = str(n)
+def fizz_buzz(nombre: int) -> str:
+    result = str(nombre)
 
-    resultat = toPrint
-    print(resultat)
+    if nombre % 3 == 0 and nombre % 5 == 0:
+        result = "fizzbuzz"
+    elif nombre % 3 == 0:
+        result = "fizz"
+    elif nombre % 5 == 0:
+        result = "buzz"
 
-    return resultat
-
-if __name__ == '__main__':
-    n = int(input("indiquez le nombre: "))
-    fizzBuzz(n)
+    return result
 
 #Fonction CalculerPosition
-import math
+def resoudre_equation(a: int, b: int, c: int) -> Union[None, float, Tuple[float, float]]:
+    delta = b ** 2 - 4 * a * c
 
+    na_pas_de_solution = delta < 0
 
-def calculerPosition(positionInitiale, vitesseInitiale, duree, vitesseFinale):
-    # TODO faites les calculs intermediaires, vous pouvez initialiser des variables locales.
-    # il faut convertir les km/h en m/s, trouver l'accélération et calculer la position finale.
-    vitesseInitiale/= 3.6
-    vitesseFinale/= 3.6
-    acceleration = (vitesseFinale - vitesseInitiale)/duree
-    # TODO calculer la position finale, assigner la valeur à la variable "positionFinale"
-    positionFinale = positionInitiale + vitesseInitiale * duree + 0.5 * acceleration * duree**2
+    if na_pas_de_solution:
+        return None
 
-    return positionFinale
+    a_une_seule_solution = delta == 0
 
+    if a_une_seule_solution:
+        racine_1 = (-b + math.sqrt(delta)) / (2 * a)
+        return racine_1
 
-if __name__ == '__main__':
-    positionInitiale = int(input("Entrez la position initiale en mètre"))
-    vitesseInitiale = int(input("Entrez la vitesse initiale en km/h"))
-    duree = int(input("Entrez la duree en secondes"))
-    vitesseFinale = int(input("Entrez la vitesseFinale en km/h"))
-    print(calculerPosition(positionInitiale, vitesseInitiale, duree, vitesseFinale))
+    a_deux_solutions = delta > 0
+
+    if a_deux_solutions:
+        racine_1 = (-b + math.sqrt(delta)) / (2 * a)
+        racine_2 = (-b - math.sqrt(delta)) / (2 * a)
+        return racine_1, racine_2
 ```
 
-Le fichier *tests.py* est celui que vous devez compléter afin de réaliser les tests en question et vous assurez que les fonctions fizzBuzz() et CalculerPosition() implémentées ci-haut sont belles et bien fonctionnelles. Pour ce faire, il vous suffit de compléter quelques cas de tests pour ces deux fonctions. N'oubliez pas que vous pouvez toujours reconsulter les nombreux fichiers de test_assignment que vous possédez des anciens TP et projets.
+Le fichier *tests.py* est celui que vous devez compléter afin de réaliser les tests en question et vous assurez que les fonctions fizz_buzz() et resoudre_equation() implémentées ci-haut sont belles et bien fonctionnelles. Pour ce faire, il vous suffit de compléter quelques cas de tests pour ces deux fonctions. N'oubliez pas que vous pouvez toujours reconsulter les nombreux fichiers de test_assignment que vous possédez des anciens TP et projets.
 
 
 
