@@ -18,41 +18,57 @@
 Le TP4 se concentre sur l'utilisation de librairies scientifiques et graphiques. Plus précisément, vous aurez à vous familiariser avec numpy et pandas, des librairies essentielles en python en plus de visualiser certaines données avec matplotlib et seaborn. Exceptionnellement, les étapes à suivre pour les parties 1 et 2 seront expliquées entièrement dans le jupyter notebook nommé TP4.ipynb. Pour ce qui est de la partie 3 sur la rédaction de tests, un élément important lors de la réalisation de projet en programmation, les instructions sont ci-dessous.
 
 ## Partie 3: Rédactions des tests
-Comme vu en classe, il est très important de tester extensivement le code écrit. C'est malheureusement une pratique souvent ignorée par manque de temps ou d'intérêt. Mais comme pour toute autre bonne pratique en génie informatique/logiciel, les conséquences négatives d'une telle décision finissent par nous rattraper tous.
+Il est primordial de tester extensivement le code écrit. Toutefois, cette pratique est souvent mise de côté par manque de temps ou d'envie. Elle demeure néanmoins une bonne habitude à entreprendre pour vos futurs projets en tant qu'ingénieur en informatique/logiciel.
 
-Dans le cas spécifique d'un jeu, qui dépend d'une interaction constante entre le joueur et la logique de jeu (à travers les commandes), les tests sont encore plus importants. Il vous sera donc demandé de tester l'ensemble des fonctions définies dans *logique.py*
+Pour votre première rédaction de tests, vous allez vous inspirer de codes déjà rédigés auparavant lors du TP1. Les codes en question sont les suivants. 
 
-Le fichier *tests.py* contient un exemple de code rédigé pour tester UN cas d'utilisation d'UNE fonction (à noter que le test en tant que tel n'est pas implémenté). De plus, vous devez rajouter l'appel aux tests que vous ajoutez dans le *main* de la même façon que pour l'exemple.
 ```python
-# Tests 
-def tester_inverser_matrice_identite():
-    matrice = [[1, 0, 0, 0],
-               [0, 1, 0, 0],
-               [0, 0, 1, 0],
-               [0, 0, 0, 1]]
-    matrice_attendue = [[0, 0, 0, 1],
-                        [0, 0, 1, 0],
-                        [0, 1, 0, 0],
-                        [1, 0, 0, 0]]
-    return logique.inverser(matrice) == matrice_attendue
+# Fonction fizzBuzz 
+def fizzBuzz(n):
+    # TODO imprimer la chaine de caractère appropriée avec la fonction print().
+    #  Assigner ensuite la valeur à la variable resultat
+    toPrint = ""
+    if n%3==0:
+        toPrint += "fizz"
+    if n%5==0:
+        toPrint += "buzz"
+    if toPrint == "":
+        toPrint = str(n)
 
-# Affichage des tests
-def ecrire_resultat_test(test, resultat):
-    reussite_ou_echec = ("Échec", "Réussite")[resultat]
-    print(test + "..." + reussite_ou_echec)
+    resultat = toPrint
+    print(resultat)
+
+    return resultat
+
+if __name__ == '__main__':
+    n = int(input("indiquez le nombre: "))
+    fizzBuzz(n)
+
+#Fonction CalculerPosition
+import math
+
+
+def calculerPosition(positionInitiale, vitesseInitiale, duree, vitesseFinale):
+    # TODO faites les calculs intermediaires, vous pouvez initialiser des variables locales.
+    # il faut convertir les km/h en m/s, trouver l'accélération et calculer la position finale.
+    vitesseInitiale/= 3.6
+    vitesseFinale/= 3.6
+    acceleration = (vitesseFinale - vitesseInitiale)/duree
+    # TODO calculer la position finale, assigner la valeur à la variable "positionFinale"
+    positionFinale = positionInitiale + vitesseInitiale * duree + 0.5 * acceleration * duree**2
+
+    return positionFinale
 
 
 if __name__ == '__main__':
-    ecrire_resultat_test(tester_inverser_matrice_identite.__name__, tester_inverser_matrice_identite())
+    positionInitiale = int(input("Entrez la position initiale en mètre"))
+    vitesseInitiale = int(input("Entrez la vitesse initiale en km/h"))
+    duree = int(input("Entrez la duree en secondes"))
+    vitesseFinale = int(input("Entrez la vitesseFinale en km/h"))
+    print(calculerPosition(positionInitiale, vitesseInitiale, duree, vitesseFinale))
 ```
 
-### À faire
+Le fichier *tests.py* est celui que vous devez compléter afin de réaliser les tests en question et vous assurez que les fonctions fizzBuzz() et CalculerPosition() implémentées ci-haut sont belles et bien fonctionnelles. Pour ce faire, il vous suffit de compléter quelques cas de tests pour ces deux fonctions. N'oubliez pas que vous pouvez toujours reconsulter les nombreux fichiers de test_assignment que vous possédez des anciens TP et projets.
 
-Votre code doit tester les cas (valeurs d'entrées et d'exécutions) **limites** des fonctions afin de repérer d'éventuelles erreurs de logique. Une fonction par cas de test vous est demandé. Normalement, pour avoir une couverture exhaustive du code, il faut s'assurer de passer par tous les chemins de code ainsi que par toutes les valeurs limites. Toutefois, pour ce TP, 2 cas de tests par fonction sera suffisant. Veuillez vous assurer d'avoir un nom clair qui identifie bien la fonction testée ainsi que le cas de test.  
-**Puisque la fonction initialiser_nouvelle_matrice() ne prend pas de paramètres et qu'elle retourne toujours la même chose, un seul test est nécessaire.**
-
-Exemple: Tests pour la fonction inverser
-* tester_inverser_matrice_identite()
-* tester_inverser_matrice_remplie()
 
 
