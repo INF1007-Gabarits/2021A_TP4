@@ -61,5 +61,17 @@ def resoudre_equation(a: int, b: int, c: int) -> Union[None, float, Tuple[float,
 
 Le fichier *tests.py* est celui que vous devez compléter afin de réaliser les tests en question et vous assurez que les fonctions fizz_buzz() et resoudre_equation() implémentées ci-haut sont belles et bien fonctionnelles. Pour ce faire, il vous suffit de compléter quelques cas de tests pour ces deux fonctions. N'oubliez pas que vous pouvez toujours reconsulter les nombreux fichiers de test_assignment que vous possédez des anciens TP et projets.
 
+## Barème
+
+| Question |  Points  |  
+|----------|----------|
+| 1.1      | 2        | 
+| 1.2      | 4        | 
+| 2.1      | 1        | 
+| 2.2      | 4        | 
+| 3        | 3        | 
+| 4        | 4        | 
+| Partie 3 | 2        | 
+
 
 
