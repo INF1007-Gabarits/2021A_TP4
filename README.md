@@ -10,7 +10,7 @@
 
 ## Directives particulières
 * Un fichier TP4.ipynb sera utilisé;
-* Il suffit de faire un 'pip install jupyter' puis de rajouter jupyter sur pycharm afin de l'ouvrir, les jupyter notebook sont intéressants pour leur affichage rapide et vous familiariserons avec un outil communément utilisé;
+* Il suffit de faire un 'pip install jupyter' puis de rajouter jupyter sur pycharm afin de l'ouvrir, les jupyter notebook sont intéressants pour leur affichage rapide et vous familiariserons avec un outil communément utilisé; Afin de l'utiliser directement sur pycharm, il faut avoir la version pro, vous pouvez l'installer via votre courriel de Polytechnique en cliquant [ici](https://www.jetbrains.com/shop/eform/students). Pour ceux avec visual studio code, la version gratuite offre déjà le plugin jupyter que vous pouvez installer gratuitement.
 * N'oubliez pas également d'installer les librairies manquantes (seaborn, numpy et pandas) via anaconda ou directement via pycharm; 
 * Pas de librairies externes autres que celles déjà importées.
 
